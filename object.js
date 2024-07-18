@@ -79,3 +79,5 @@ console.log(personel.arrowFunction());
 // 2) [] Square bracket ile erişim
 
 console.log(personel["birth"]);
+console.log(personel["adres"]);
+console.log(personel["adres"]["city"]);
