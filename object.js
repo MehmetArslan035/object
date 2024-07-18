@@ -61,3 +61,11 @@ let personel = {
         return this.isMarried
     }
 }
+
+/* ---------- OKUMA/ERİŞME ---------- */
+
+// 1) . (dot) notasyonu ile erişim
+
+console.log(personel.name);
+console.log(personel.lastName);
+console.log(personel.birth);
