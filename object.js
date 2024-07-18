@@ -112,3 +112,60 @@ console.log("deepCopy", deepCopyPersonel);
 personel.lastName = "Mecnun";
 console.log("personel listesi", personel);
 console.log("deepCopy", deepCopyPersonel);
+
+
+//* ------------------------------------------------------ */
+//*                     OBJECT METHODS
+//* ------------------------------------------------------ */
+//? İçiçe (nested) Object kullanımı
+
+let employeeList = {
+    person1: {
+      name: "Abdulkadir",
+      lastName: "baki",
+      dateOfBirth: 1980,
+      salary: 20000,
+      job: "developer",
+    },
+    person2: {
+      name: "elif",
+      lastName: "akalın",
+      dateOfBirth: 1990,
+      salary: 20000,
+      job: "developer",
+    },
+    person3: {
+      name: "esra",
+      lastName: "bilgin",
+      dateOfBirth: 1985,
+      salary: 21000,
+      job: "devops",
+    },
+  };
+  
+  console.log(employeeList.person1);
+  console.log(employeeList.person1.name);
+  console.log(employeeList["person2"]);
+  console.log(employeeList["person2"]["lastName"]);
+  
+  //* -------------------------------------------------------- */
+  //*                   FOR - OF -IN YAPISI                    */
+  //* -------------------------------------------------------- */
+  
+  //? for ... of
+  let numberAndLetters = ["a", 2, "n", 5];
+  for (const item of numberAndLetters) {
+    console.log(item);
+  }
+  
+  //! for...of sıralı olan dizilerde kullanılır ama objectlerde daha komplex bir yapı olduğu için for-of kullanılmaz
+  // for (const employee of employeeList) {
+  //   console.log(employee);
+  // }
+  //!employeeList is not iterable hatası aldık
+  
+  //? for ... in
+  for (const i in employeeList) {
+    console.log(i);
+    console.log(employeeList[i]);
+  }
