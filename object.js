@@ -89,3 +89,9 @@ console.log(personel);
 personel.name ="Ayşe";
 personel["lastName"] = "Yılmaz";
 console.log(personel);
+
+
+// Bir objeyi kopyalama
+const elemanlistesi = personel
+console.log("personel listesi, personel");
+console.log("eleman listesi", elemanlistesi);
