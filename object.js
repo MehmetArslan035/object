@@ -95,3 +95,8 @@ console.log(personel);
 const elemanlistesi = personel
 console.log("personel listesi, personel");
 console.log("eleman listesi", elemanlistesi);
+
+personel.name = "Leyla"
+console.log("*** kopyalamadan sonra ***");
+console.log(personel);
+console.log(elemanlistesi); 
