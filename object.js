@@ -58,7 +58,8 @@ let personel = {
         return "Merhaba"
     },
     arrowFunction: ()=>{
-        return this.isMarried
+        // return this.isMarried
+        return personel.isMarried
     }
 }
 
@@ -69,3 +70,12 @@ let personel = {
 console.log(personel.name);
 console.log(personel.lastName);
 console.log(personel.birth);
+console.log(personel.experiences[0]);
+console.log(personel.adres.city);
+console.log(personel.calculateAge());
+console.log(personel.selam());
+console.log(personel.arrowFunction());
+
+// 2) [] Square bracket ile erişim
+
+console.log(personel["birth"]);
