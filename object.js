@@ -81,3 +81,6 @@ console.log(personel.arrowFunction());
 console.log(personel["birth"]);
 console.log(personel["adres"]);
 console.log(personel["adres"]["city"]);
+personel.phone = "555-55-55"
+personel["nick"] = "sopalı";
+console.log(personel);
