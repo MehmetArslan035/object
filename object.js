@@ -84,3 +84,8 @@ console.log(personel["adres"]["city"]);
 personel.phone = "555-55-55"
 personel["nick"] = "sopalı";
 console.log(personel);
+
+// mevcut özelliği güncelleme
+personel.name ="Ayşe";
+personel["lastName"] = "Yılmaz";
+console.log(personel);
