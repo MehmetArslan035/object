@@ -169,3 +169,13 @@ let employeeList = {
     console.log(i);
     console.log(employeeList[i]);
   }
+
+
+  const keyDizisi = Object.keys(employeeList)
+  console.log(Object.keys(employeeList));
+
+//   Object.values() metodu value değerlerini bir diziye aktarır
+const valueDizisi = Object.values(employeeList)
+console.log(valueDizisi);
+const filteredDizi = valueDizisi.filter(emp => emp.job === "developer")
+console.log(filteredDizi);
