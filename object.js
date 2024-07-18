@@ -53,5 +53,11 @@ let personel = {
     adres: {city: "izmir", street:"begonya", no:5},
     calculateAge: function(){
         return new Date().getFullYear() - this.birth
+    },
+    selam: ()=>{
+        return "Merhaba"
+    },
+    arrowFunction: ()=>{
+        return this.isMarried
     }
 }
