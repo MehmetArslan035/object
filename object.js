@@ -100,3 +100,15 @@ personel.name = "Leyla"
 console.log("*** kopyalamadan sonra ***");
 console.log(personel);
 console.log(elemanlistesi); 
+
+
+//! Shallow copying (sığ) koplayama
+//! Yukarıdaki şekilde yapıldığında değişimlerden etkilenir
+
+//? ----------------------------------------------- */
+//? Kopyasının etkilenmesini istemiyorsak - Deep Copy yöntemi kullanılır.
+let deepCopyPersonel = JSON.parse(JSON.stringify(personel));
+console.log("deepCopy", deepCopyPersonel);
+personel.lastName = "Mecnun";
+console.log("personel listesi", personel);
+console.log("deepCopy", deepCopyPersonel);
