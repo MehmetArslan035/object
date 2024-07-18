@@ -40,3 +40,6 @@ const personel2 = new personellist(1002, "Osman", 15000);
 console.log(personel2);
 
 //? 3.Object Literal (en çok tercih edilen yöntem)
+let house = {} //boş bir obje tanımlanır.
+house.room = 4
+console.log(house);
