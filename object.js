@@ -43,3 +43,15 @@ console.log(personel2);
 let house = {} //boş bir obje tanımlanır.
 house.room = 4
 console.log(house);
+
+let personel = {
+    name: "Fatma",
+    lastName: "Kara",
+    birth: 1990,
+    isMarried: true,
+    experiences: ["tester","developer","devops"],
+    adres: {city: "izmir", street:"begonya", no:5},
+    calculateAge: function(){
+        return new Date().getFullYear() - this.birth
+    }
+}
